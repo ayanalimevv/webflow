@@ -9,6 +9,30 @@
   border-bottom: 3px solid #fff500;
 }
 
+.navbar .navbar-light .navbar-nav .nav-link {
+  text-align: center;
+}
+
+.navbar .nav-link {
+  margin: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar .active {
+  background: black;
+  color: white !important;
+  padding: 8px 20px !important;
+}
+
 .navbar-brand {
   margin: 1rem;
   font-family: Lobster !important;
@@ -29,6 +53,21 @@
 
 #hero .hero1 {
   padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 61vh;
+}
+
+#hero .hero1 button {
+  width: 10rem;
 }
 
 #hero .hero1 h1 {
@@ -55,37 +94,18 @@
   margin: 1rem;
 }
 
+#hero .hero2 {
+  background: url(./icons/phone-img2.jpg) no-repeat center center;
+  background-size: contain;
+}
+
 #choice {
-  font-family: Montserrat;
-  height: 140vw;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 
-#choice .brands-div {
-  background: #fafafa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-}
-
-#choice .row {
-  height: 47vh;
-}
-
-#choice .brands-logo {
-  background: #FFFDFD;
-  -webkit-box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 0.5rem;
-  height: 6rem;
-  width: 6rem;
+#choice .choice-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,26 +115,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
+  margin: 6rem 0;
 }
 
-#choice h1 {
-  font-size: 3rem;
-  font-weight: 520;
-  margin: 3rem;
-}
-
-#choice .row {
+#choice .brands-logo {
+  background: #FFFDFD;
+  -webkit-box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#choice .choice-logo {
-  height: 40px;
+#choice .logos {
+  width: 6rem;
+}
+
+#choice .brands-logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #why {
@@ -129,13 +158,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300vw;
+  position: relative;
+  height: 42vw;
 }
 
 #why .whyheading {
   font-size: 3rem;
   font-weight: 520;
   margin: 3rem;
+  text-align: center;
 }
 
 #why .why-logos {
@@ -149,6 +180,19 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+#why .why-div {
+  height: 31vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #why .why-logo-div {
@@ -169,6 +213,8 @@
 }
 
 #owner {
+  height: 40vw;
+  position: relative;
   font-family: Montserrat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,6 +236,7 @@
   font-weight: 520;
   margin: 3rem 0;
   text-align: center;
+  top: 0rem;
 }
 
 #owner .card-img-top {
@@ -200,11 +247,24 @@
   text-align: center;
 }
 
+#owner .card-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #owner .card {
-  background: #FFFDFD;
+  background: #E3E3E3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,11 +287,13 @@
 }
 
 .footer {
+  position: relative;
   font-family: Montserrat;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 3rem 0 !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -261,5 +323,39 @@
 .footer .copyright {
   color: rgba(0, 0, 0, 0.67);
   font-size: 0.8rem;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 990px) {
+  #why {
+    height: 170vh;
+  }
+  #why .why-div {
+    height: 152vh;
+  }
+}
+
+@media (max-width: 700px) {
+  #owner {
+    height: 85vw;
+  }
+}
+
+@media (max-width: 450px) {
+  #owner {
+    height: 155vw;
+  }
+}
+
+@media (max-width: 350px) {
+  #owner {
+    height: 160vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

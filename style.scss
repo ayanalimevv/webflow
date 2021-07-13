@@ -14,6 +14,26 @@ $font-size: calc(1.375rem + 1.5vw);
 .yellow-underline{
     border-bottom: 3px solid $secondary;
 }
+.navbar{
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .nav-link{
+        margin:1rem;
+    }
+    .nav-link:hover{
+        color: black;
+        transform: scale(1.2);
+    }
+    .navbar-nav{
+        margin-left: auto;
+    }
+    .active{
+        background: black;
+        color: white !important;
+        padding: 8px 20px !important;
+    }
+}
 
 // Navbar designing
 .navbar-brand{
@@ -33,9 +53,17 @@ $font-size: calc(1.375rem + 1.5vw);
     font-family: Montserrat;
     .hero1{
         padding-right: 0;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 61vh;
+        button{
+            width: 10rem;
+        }
         h1{
             font-size: 3rem;
             margin-bottom: 2rem;
+
         }
         h3{
             font-size: 1.5rem;
@@ -54,56 +82,39 @@ $font-size: calc(1.375rem + 1.5vw);
     .container-fluid{
         margin: 1rem;
     }
-//     .hero2{
-// //         width: 529px;
-// // heigh.hero2t: 449px;
-// // box-shadow: 7px 10px 4px rgba(0, 0, 0, 0.25);
-// // border-radius: 30px;
-// //         background: url(./icons/phone-img.jpg) no-repeat center center;
-// //         aspect-ratio: auto;
-//     }
+    .hero2{
+        background: url(./icons/phone-img2.jpg) no-repeat center center;
+        background-size: contain;
+//         box-shadow: 7px 10px 4px rgba(0, 0, 0, 0.25);
+// border-radius: 30px;
+    }
 }
 #choice{
-    
-    font-family: $font;
-    height: 140vw;
-    .brands-div{
-        background: #fafafa;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    .choice-head{
         display: flex;
-justify-content: space-evenly;
-align-items: center;
-padding: 0;
-    }
-    .row{
-        height: 47vh;
+        justify-content: center;
+        align-items: center;
+        margin: 6rem 0;
     }
     .brands-logo{
         background: #FFFDFD;
 box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-margin: 0.5rem;
-height: 6rem;
-width: 6rem;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 1rem;
+width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    h1{
-        font-size: 3rem;
-    font-weight: 520;
-    margin: 3rem;
+    .logos{
+        width: 6rem;
     }
-    .row{
-        display: flex;
-        justify-content: space-evenly;
-        
-    }
-    .choice-logo{
-        height: 40px;
+    .brands-logo:hover{
+        transform: scale(1.1);
     }
 }
 #why{
@@ -111,11 +122,14 @@ margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300vw;
+
+    position:relative;
+    height: 42vw;
         .whyheading{
             font-size: 3rem;
             font-weight: 520;
             margin: 3rem;
+            text-align: center;
         }
         .why-logos{
             width: 5rem;
@@ -124,6 +138,13 @@ margin-top: 1rem;
             display: flex;
             justify-content: space-evenly;
         }
+        .why-div{
+            height: 31vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        
         .why-logo-div{
             display: flex;
             justify-content: center;
@@ -134,6 +155,8 @@ margin-top: 1rem;
 }
 
 #owner{
+    height: 40vw;
+    position: relative;
     font-family: $font;
     display: flex;
     justify-content: center;
@@ -144,6 +167,7 @@ margin-top: 1rem;
     font-weight: 520;
     margin: 3rem 0;
     text-align: center;
+    top: 0rem;
     }
     .card-img-top{
         margin: 1rem 0;
@@ -151,10 +175,18 @@ margin-top: 1rem;
     .card-title{
         text-align: center;
     }
+    .card-div{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
     .card{
-        background: #FFFDFD;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #E3E3E3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
+width: 18rem;
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// border-radius: 10px;
 display: flex;
     justify-content: center;
     align-items: center;
@@ -167,9 +199,11 @@ display: flex;
     }
 }
 .footer{
+    position:relative;
     font-family: $font;
     width: 100vw;
     display: flex;
+    padding: 3rem 0 !important;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -186,4 +220,33 @@ display: flex;
     font-size: 0.8rem;
     }
     
+}
+.carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+@media (max-width:990px){
+    #why{
+        height: 170vh;
+        .why-div{
+            height: 152vh;
+        }
+    }
+}
+@media (max-width:700px){
+    #owner {
+        height: 85vw;
+}
+}
+@media (max-width:450px){
+    #owner {
+        height: 155vw;
+}
+}
+@media (max-width:350px){
+    #owner {
+        height: 160vw;
+}
 }
