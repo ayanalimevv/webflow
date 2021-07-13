@@ -51,12 +51,17 @@ $font-size: calc(1.375rem + 1.5vw);
 // Hero designing
 #hero{
     font-family: Montserrat;
+    height: 75vh;
     .hero1{
         padding-right: 0;
         display: flex;
     flex-direction: column;
     justify-content: center;
     height: 61vh;
+    .phone-search{
+       box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.25);
+    padding: 0.2rem;
+    }
         button{
             width: 10rem;
         }
@@ -77,6 +82,7 @@ $font-size: calc(1.375rem + 1.5vw);
         }
         button{
             border-radius: 0;
+            margin-bottom: 2rem;
         }
     }
     .container-fluid{
@@ -85,8 +91,6 @@ $font-size: calc(1.375rem + 1.5vw);
     .hero2{
         background: url(./icons/phone-img2.jpg) no-repeat center center;
         background-size: contain;
-//         box-shadow: 7px 10px 4px rgba(0, 0, 0, 0.25);
-// border-radius: 30px;
     }
 }
 #choice{
@@ -116,6 +120,10 @@ width: 10rem;
     .brands-logo:hover{
         transform: scale(1.1);
     }
+    h1{
+        font-size: 3rem;
+        font-weight: 500;
+    }
 }
 #why{
     font-family: $font;
@@ -128,7 +136,7 @@ width: 10rem;
         .whyheading{
             font-size: 3rem;
             font-weight: 520;
-            margin: 3rem;
+            margin: 1rem;
             text-align: center;
         }
         .why-logos{
@@ -171,6 +179,7 @@ width: 10rem;
     }
     .card-img-top{
         margin: 1rem 0;
+        width: 30%;
     }
     .card-title{
         text-align: center;
@@ -235,6 +244,19 @@ display: flex;
         }
     }
 }
+@media (max-width:900px){
+    #hero{
+        height: 98vh;
+    }
+}
+@media (max-width:800px){
+    #owner {
+        height: 85vw;
+    }
+    #hero{
+        height: 114vh;
+    }
+}
 @media (max-width:700px){
     #owner {
         height: 85vw;
@@ -249,4 +271,20 @@ display: flex;
     #owner {
         height: 160vw;
 }
+}
+@media (max-width:600px){
+    #hero {
+        height: 130vw;
+    }
+    .hero2{
+        height: 50vw;
+    }
+}
+@media (max-width:400px){
+    #hero {
+        height: 220vw;
+    }
+    .hero2{
+        height: 130vw;
+    }
 }

@@ -49,6 +49,7 @@
 
 #hero {
   font-family: Montserrat;
+  height: 75vh;
 }
 
 #hero .hero1 {
@@ -64,6 +65,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 61vh;
+}
+
+#hero .hero1 .phone-search {
+  -webkit-box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
+  padding: 0.2rem;
 }
 
 #hero .hero1 button {
@@ -88,6 +95,7 @@
 
 #hero .hero1 button {
   border-radius: 0;
+  margin-bottom: 2rem;
 }
 
 #hero .container-fluid {
@@ -116,7 +124,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 6rem 0;
-  font-size:3rem;
 }
 
 #choice .brands-logo {
@@ -147,6 +154,11 @@
           transform: scale(1.1);
 }
 
+#choice h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 #why {
   font-family: Montserrat;
   display: -webkit-box;
@@ -166,7 +178,7 @@
 #why .whyheading {
   font-size: 3rem;
   font-weight: 520;
-  margin: 3rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -242,6 +254,7 @@
 
 #owner .card-img-top {
   margin: 1rem 0;
+  width: 30%;
 }
 
 #owner .card-title {
@@ -342,6 +355,21 @@
   }
 }
 
+@media (max-width: 900px) {
+  #hero {
+    height: 98vh;
+  }
+}
+
+@media (max-width: 800px) {
+  #owner {
+    height: 85vw;
+  }
+  #hero {
+    height: 114vh;
+  }
+}
+
 @media (max-width: 700px) {
   #owner {
     height: 85vw;
@@ -357,6 +385,24 @@
 @media (max-width: 350px) {
   #owner {
     height: 160vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero {
+    height: 130vw;
+  }
+  .hero2 {
+    height: 50vw;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero {
+    height: 220vw;
+  }
+  .hero2 {
+    height: 130vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
