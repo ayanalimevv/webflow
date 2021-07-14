@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --lobster: 'Lobster', cursive;
+  --montserrat:'Montserrat', sans-serif;
+}
+
+hr {
+  height: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,115 +16,7 @@
           box-sizing: border-box;
 }
 
-.yellow-underline {
-  border-bottom: 3px solid #fff500;
-}
-
-.navbar .navbar-light .navbar-nav .nav-link {
-  text-align: center;
-}
-
-.navbar .nav-link {
-  margin: 1rem;
-}
-
-.navbar .nav-link:hover {
-  color: black;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.navbar .navbar-nav {
-  margin-left: auto;
-}
-
-.navbar .active {
-  background: black;
-  color: white !important;
-  padding: 8px 20px !important;
-}
-
-.navbar-brand {
-  margin: 1rem;
-  font-family: Lobster !important;
-}
-
-.navbar-brand .logo-dot {
-  color: #fff500;
-}
-
-.navbar-light .navbar-toggler {
-  border: none;
-  margin: 1rem;
-}
-
-#hero {
-  font-family: Montserrat;
-  height: 75vh;
-}
-
-#hero .hero1 {
-  padding-right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 61vh;
-}
-
-#hero .hero1 .phone-search {
-  -webkit-box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
-  padding: 0.2rem;
-}
-
-#hero .hero1 button {
-  width: 10rem;
-}
-
-#hero .hero1 h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
-#hero .hero1 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #000 92%;
-}
-
-#hero .hero1 p {
-  color: #797979;
-  margin-bottom: 2rem;
-}
-
-#hero .hero1 button {
-  border-radius: 0;
-  margin-bottom: 2rem;
-}
-
-#hero .container-fluid {
-  margin: 1rem;
-}
-
-#hero .hero2 {
-  background: url(./icons/phone-img2.jpg) no-repeat center center;
-  background-size: contain;
-}
-
-#choice {
-  width: 100vw;
-  height: 80vh;
-  position: relative;
-}
-
-#choice .choice-head {
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,10 +26,141 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 6rem 0;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#choice .brands-logo {
+body nav {
+  margin-top: .3rem;
+  padding: 0 .5rem;
+  width: 100%;
+}
+
+body nav .nav-link {
+  margin: 0 .8rem;
+}
+
+body nav .bg-light {
+  background-color: #fff !important;
+}
+
+body nav .navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+body nav .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+body nav .navbar-brand {
+  font-family: var(--lobster);
+  background-color: #fff;
+  margin-left: .5rem;
+}
+
+body nav .navbar-brand .yellow-dot {
+  color: yellow;
+}
+
+body nav .active {
+  background-color: #000;
+}
+
+body nav .active .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 1.5rem;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+body .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .row .col1 h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+body .container .row .col1 h3 {
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+body .container .row .col1 p {
+  color: gray;
+  font-size: 1.05rem;
+}
+
+body .container .row .col1 .phone-search {
+  margin-top: 1rem;
+  -webkit-box-shadow: 4px 4px 11px 2px #00000040;
+          box-shadow: 4px 4px 11px 2px #00000040;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+body .container .row .col1 .contactbtn {
+  background-color: black;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-radius: 0;
+  width: 10rem;
+}
+
+body .container .row .col1 .yellow-underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ffff00;
+          text-decoration-color: #ffff00;
+}
+
+body .container .row .col2 {
+  display: none;
+}
+
+body .container .phone2 {
+  width: 100%;
+  height: 30rem;
+}
+
+body .brands {
+  width: 90%;
+}
+
+body .brands .choice-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+
+body .brands .brands-logo {
   background: #FFFDFD;
   -webkit-box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
@@ -145,22 +179,34 @@
           align-items: center;
 }
 
-#choice .logos {
+body .brands flickity-page-dots .dot {
+  display: none;
+}
+
+body .brands .logos {
   width: 6rem;
 }
 
-#choice .brands-logo:hover {
+body .brands .brands-logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-#choice h1 {
-  font-size: 3rem;
-  font-weight: 500;
+body .brands h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-#why {
-  font-family: Montserrat;
+body .brands .yellow-underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ffff00;
+          text-decoration-color: #ffff00;
+}
+
+body #why {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--montserrat);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,22 +217,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  height: 42vw;
+  height: auto;
 }
 
-#why .whyheading {
-  font-size: 3rem;
+body #why .whyheading {
+  font-size: 1.8rem;
   font-weight: 520;
-  margin: 1rem;
+  margin: 2rem;
   text-align: center;
 }
 
-#why .why-logos {
+body #why .why-logos {
   width: 5rem;
 }
 
-#why .row {
+body #why .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,8 +240,8 @@
           justify-content: space-evenly;
 }
 
-#why .why-div {
-  height: 31vw;
+body #why .why-div {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +253,7 @@
           justify-content: center;
 }
 
-#why .why-logo-div {
+body #why .why-logo-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,10 +270,9 @@
   margin: 1rem 0;
 }
 
-#owner {
-  height: 40vw;
-  position: relative;
-  font-family: Montserrat;
+body #owner {
+  height: auto;
+  font-family: var(--montserrat);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,24 +288,24 @@
           flex-direction: column;
 }
 
-#owner h1 {
-  font-size: 3rem;
+body #owner h1 {
+  font-size: 1.8rem;
   font-weight: 520;
   margin: 3rem 0;
   text-align: center;
   top: 0rem;
 }
 
-#owner .card-img-top {
+body #owner .card-img-top {
   margin: 1rem 0;
   width: 30%;
 }
 
-#owner .card-title {
+body #owner .card-title {
   text-align: center;
 }
 
-#owner .card-div {
+body #owner .card-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,12 +317,12 @@
           align-items: center;
 }
 
-#owner .card {
-  background: #E3E3E3;
+body #owner .card {
+  background: #dadada;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  width: 18rem;
+  width: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,22 +336,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 15rem;
+  height: auto;
   margin: 0 0 2rem 0;
 }
 
-#owner .contact-icon {
+body #owner .contact-icon {
   margin: 0.5rem;
 }
 
-.footer {
-  position: relative;
-  font-family: Montserrat;
-  width: 100vw;
+body #footer {
+  width: 100%;
+}
+
+body #footer .footer {
+  font-family: var(--montserrat);
+  width: 100%;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 0 !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -320,89 +367,55 @@
           flex-direction: column;
 }
 
-.footer .footer-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 700;
+body #footer .footer .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.footer .contact-mail {
+body #footer .footer .contact-mail {
   margin-top: 1rem;
 }
 
-.footer .copyright {
+body #footer .footer .copyright {
   color: rgba(0, 0, 0, 0.67);
   font-size: 0.8rem;
 }
 
-.carousel-cell {
+body #footer .carousel-cell {
   width: 28%;
   height: 200px;
   margin-right: 10px;
   border-radius: 5px;
 }
 
-@media (max-width: 990px) {
-  #why {
-    height: 170vh;
+@media only screen and (min-width: 1200px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #why .why-div {
-    height: 152vh;
+  body .container .row .col2 {
+    display: block;
   }
-}
-
-@media (max-width: 900px) {
-  #hero {
-    height: 98vh;
+  body .brands h1 {
+    font-size: 3rem;
   }
-}
-
-@media (max-width: 800px) {
-  #owner {
-    height: 85vw;
+  body #why .whyheading {
+    font-size: 3rem;
   }
-  #hero {
-    height: 114vh;
-  }
-}
-
-@media (max-width: 700px) {
-  #owner {
-    height: 85vw;
-  }
-}
-
-@media (max-width: 450px) {
-  #owner {
-    height: 155vw;
-  }
-}
-
-@media (max-width: 350px) {
-  #owner {
-    height: 250vw;
-  }
-}
-
-@media (max-width: 600px) {
-  #hero {
-    height: 130vw;
-  }
-  .hero2 {
-    height: 50vw;
-  }
-}
-
-@media (max-width: 400px) {
-  #hero {
-    height: 250vw;
-  }
-  .hero2 {
-    height: 130vw;
+  body #owner h1 {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
