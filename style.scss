@@ -1,290 +1,313 @@
-$secondary:#fff500;
-$font:Montserrat;
-$heavy-weight:700;
-$light-weight:400;
-$main-col:#000;
-$sec-col:#000 92%;
-$third-col:#797979;
-$font-size: calc(1.375rem + 1.5vw);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --lobster: 'Lobster', cursive;
+    --montserrat :'Montserrat', sans-serif; 
+}
+hr{
+    height: 5px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.yellow-underline{
-    border-bottom: 3px solid $secondary;
-}
-.navbar{
-    .navbar-light .navbar-nav .nav-link {
-        text-align: center;
-    }
-    .nav-link{
-        margin:1rem;
-    }
-    .nav-link:hover{
-        color: black;
-        transform: scale(1.2);
-    }
-    .navbar-nav{
-        margin-left: auto;
-    }
-    .active{
-        background: black;
-        color: white !important;
-        padding: 8px 20px !important;
-    }
-}
 
-// Navbar designing
-.navbar-brand{
-    margin: 1rem;
-    font-family: Lobster !important;
-    .logo-dot{
-        color: $secondary;
-    }
-}
-.navbar-light .navbar-toggler{
-    border: none;
-    margin: 1rem;
-}
-
-// Hero designing
-#hero{
-    font-family: Montserrat;
-    height: 75vh;
-    .hero1{
-        padding-right: 0;
-        display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 61vh;
-    .phone-search{
-       box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.25);
-    padding: 0.2rem;
-    }
-        button{
-            width: 10rem;
-        }
-        h1{
-            font-size: 3rem;
-            margin-bottom: 2rem;
-
-        }
-        h3{
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: $sec-col;
-        }
-        p{
-            color: $third-col;
-            margin-bottom: 2rem;
-            
-        }
-        button{
-            border-radius: 0;
-            margin-bottom: 2rem;
-        }
-    }
-    .container-fluid{
-        margin: 1rem;
-    }
-    .hero2{
-        background: url(./icons/phone-img2.jpg) no-repeat center center;
-        background-size: contain;
-    }
-}
-#choice{
-    width: 100vw;
-    height: 80vh;
-    position: relative;
-    .choice-head{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 6rem 0;
-    }
-    .brands-logo{
-        background: #FFFDFD;
-box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-width: 10rem;
-    height: 10rem;
-    margin: 1rem;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .logos{
-        width: 6rem;
-    }
-    .brands-logo:hover{
-        transform: scale(1.1);
-    }
-    h1{
-        font-size: 3rem;
-        font-weight: 500;
-    }
-}
-#why{
-    font-family: $font;
-    display: flex;
+    height: auto;
     flex-direction: column;
-    align-items: center;
 
-    position:relative;
-    height: 42vw;
-        .whyheading{
-            font-size: 3rem;
-            font-weight: 520;
-            margin: 1rem;
-            text-align: center;
+
+    nav{
+     
+       margin-top: .3rem;
+      
+        .nav-link{
+            margin: 0 .8rem;
         }
-        .why-logos{
-            width: 5rem;
+        padding: 0 .5rem;
+        width: 100%;
+        .bg-light {
+            background-color: #fff!important;
         }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #000;
+        }
+
+        .navbar-toggler {
+            color: rgba(0,0,0,.55);
+            border-color: rgba(0, 0, 0, 0);
+        }
+
+        
+        .navbar-brand{
+            font-family: var(--lobster);
+            background-color: #fff;
+            margin-left: .5rem;
+
+            .yellow-dot{
+                color: yellow;
+            }
+        }
+
+        .active{
+            background-color: #000;
+           
+
+            .nav-link{
+                color: #fff !important;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: start;
+        margin-top: 1.5rem;
+        height: 100%;
+        margin-bottom: 1rem;
+
         .row{
             display: flex;
-            justify-content: space-evenly;
+           align-items: center;
+
+           .col1{
+              
+              h1{
+               font-size: 2rem;
+               margin-bottom: 1rem;
+              }
+
+              h3{
+                  color: #000;
+                  font-weight: 400;
+                  margin-bottom: 1rem;
+              }
+              p{
+                  color: gray;
+                  font-size: 1.05rem;
+              }
+              .phone-search{
+                    margin-top: 1rem;
+                    box-shadow: 4px 4px 11px 2px #00000040;
+                    padding: 0.2rem;
+                    width: 100%;
+              }
+
+              .contactbtn{
+                  background-color: black;
+                  margin-bottom: 1rem;
+                  color: #fff;
+                  border-radius: 0;
+                  width: 10rem;
+
+
+              }
+              
+              .yellow-underline{
+                  text-decoration: underline;
+                  text-decoration-color: #ffff00;
+              }
+           }
+           .col2{
+               display: none;
+           }
         }
-        .why-div{
-            height: 31vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-        
-        .why-logo-div{
+
+        .phone2{
+            width: 100%;
+            height: 30rem;
+        }
+    }
+
+    .brands{
+        width: 90%;
+
+        .choice-head{
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            margin: 1rem 0;
+            margin: 3rem 0;
         }
-}
+        .brands-logo{
+            background: #FFFDFD;
+    box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        flickity-page-dots .dot {
+            display: none;
+        }
+        .logos{
+            width: 6rem;
+        }
+        .brands-logo:hover{
+            transform: scale(1.1);
+        }
 
-#owner{
-    height: 40vw;
-    position: relative;
-    font-family: $font;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    h1{
-        font-size: 3rem;
-    font-weight: 520;
-    margin: 3rem 0;
-    text-align: center;
-    top: 0rem;
+        h1{
+        font-size: 1.3rem;
+        font-weight: bold;
+        }
+        .yellow-underline{
+            text-decoration: underline;
+            text-decoration-color: #ffff00;
+        }
     }
-    .card-img-top{
-        margin: 1rem 0;
-        width: 30%;
-    }
-    .card-title{
-        text-align: center;
-    }
-    .card-div{
+
+    #why{
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        font-family: var(--montserrat);
         display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .card{
-        background: #E3E3E3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-width: 18rem;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// border-radius: 10px;
-display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 15rem;
-    margin: 0 0 2rem 0;
-    }
-    .contact-icon{
-        margin: 0.5rem;
-    }
-}
-.footer{
-    position:relative;
-    font-family: $font;
-    width: 100vw;
-    display: flex;
-    padding: 3rem 0 !important;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .footer-head{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+            .whyheading{
+                font-size: 1.8rem;
+                font-weight: 520;
+                margin: 2rem;
+                text-align: center;
+            }
+            .why-logos{
+                width: 5rem;
+            }
+            .row{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .why-div{
+                height: auto;
         display: flex;
-        font-weight: $heavy-weight;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
-    .contact-mail{
-        margin-top: 1rem;
-    }
-    .copyright{
-        color: rgba(0,0,0,0.67);
-    font-size: 0.8rem;
+            
+            .why-logo-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 1rem 0;
+            }
     }
     
-}
-.carousel-cell {
-    width: 28%;
-    height: 200px;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-@media (max-width:990px){
-    #why{
-        height: 170vh;
-        .why-div{
-            height: 152vh;
+    #owner{
+        height: auto;
+     
+        font-family: var(--montserrat);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+        font-size: 1.8rem;;
+        font-weight: 520;
+        margin: 3rem 0;
+        text-align: center;
+        top: 0rem;
+        }
+        .card-img-top{
+            margin: 1rem 0;
+            width: 30%;
+        }
+        .card-title{
+            text-align: center;
+        }
+        .card-div{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .card{
+    background: #dadada;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 16rem;
+    //         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // border-radius: 10px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 0 0 2rem 0;
+        }
+        .contact-icon{
+            margin: 0.5rem;
         }
     }
-}
-@media (max-width:900px){
-    #hero{
-        height: 98vh;
+    #footer{
+     width: 100%;
+
+    .footer{  
+        font-family: var(--montserrat);
+        width: 100%;
+        text-align: center;
+        display: flex;
+      
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .contact-mail{
+            margin-top: 1rem;
+        }
+        .copyright{
+            color: rgba(0,0,0,0.67);
+        font-size: 0.8rem;
+        }
+        
+    }
+    .carousel-cell {
+        width: 28%;
+        height: 200px;
+        margin-right: 10px;
+        border-radius: 5px;
     }
 }
-@media (max-width:800px){
-    #owner {
-        height: 85vw;
-    }
-    #hero{
-        height: 114vh;
-    }
 }
-@media (max-width:700px){
-    #owner {
-        height: 85vw;
-}
-}
-@media (max-width:450px){
-    #owner {
-        height: 155vw;
-}
-}
-@media (max-width:350px){
-    #owner {
-        height: 160vw;
-}
-}
-@media (max-width:600px){
-    #hero {
-        height: 130vw;
-    }
-    .hero2{
-        height: 50vw;
-    }
-}
-@media (max-width:400px){
-    #hero {
-        height: 250vw;
-    }
-    .hero2{
-        height: 120vw;
+
+@media only screen 
+   and (min-width : 1200px) {
+  
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .container{
+            .row{
+                .col2{
+                    display: block;
+                }
+            }
+        }
+
+        .brands {
+            h1{
+                font-size: 3rem;
+            }
+        }
+        #why{
+            .whyheading{
+                font-size: 3rem;
+            }
+        }
+        #owner{
+            h1{
+                font-size: 3rem;
+            }
+        }
     }
 }
