@@ -367,6 +367,12 @@ body #footer .footer {
           flex-direction: column;
 }
 
+body #footer .footer .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body #footer .footer .contact-mail {
   margin-top: 1rem;
 }

@@ -249,16 +249,19 @@ body{
     }
     #footer{
      width: 100%;
-
+     
     .footer{  
         font-family: var(--montserrat);
         width: 100%;
         text-align: center;
         display: flex;
-      
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        .container{
+            justify-content: center;
+        }
         
         .contact-mail{
             margin-top: 1rem;
