@@ -114,8 +114,13 @@ body{
                   text-decoration-color: #ffff00;
               }
            }
+           .col{
+               flex: none;
+           }
            .col2{
-               display: none;
+              img{
+                height: 15rem;
+              }
            }
         }
 
@@ -282,6 +287,42 @@ body{
 }
 
 @media only screen 
+   and (min-width : 500px) {
+  
+    body{
+      
+        .container{
+            .row{
+                .col2{
+                    img{
+                      height: 27rem;
+                    }
+                 }
+        }
+       }
+   }
+
+}
+
+@media only screen 
+   and (min-width : 800px) {
+  
+    body{
+      
+        .container{
+            .row{
+                .col2{
+                    img{
+                      height: 40rem;
+                    }
+                 }
+        }
+       }
+   }
+
+}
+
+@media only screen 
    and (min-width : 1200px) {
   
     body{
@@ -290,11 +331,21 @@ body{
         align-items: center;
         flex-direction: column;
         .container{
+
             .row{
-                .col2{
-                    display: block;
+                .col{
+                    flex: 1 0 0;
                 }
+
+                .col2 {
+                    img{
+                        height: 28rem;
+                    }
+                }
+
             }
+           
+            
         }
 
         .brands {
